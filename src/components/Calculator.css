@@ -1,0 +1,64 @@
+.calculator-container {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  padding: 1.5rem;
+  gap: 1rem;
+}
+
+.header {
+  font-size: 3rem;
+}
+.range-input {
+  width: 90%;
+  height: 10px;
+  background: linear-gradient(to right, #64b5f6, #ff9800);
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0;
+  border: none; /* Remove default border */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add shadow for a modern look */
+}
+
+
+.label {
+  font-weight: bold;
+}
+
+.result {
+  font-size: 2rem;
+  border: 1px solid white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.calculator-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.typescript {
+  color: #3178c6;
+  -webkit-text-stroke: 1px white;
+}
+.bmi-prompt {
+  white-space: nowrap;
+  font-size: 1.2rem;
+}
+
+p{
+    margin: 0;
+}
