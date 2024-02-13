@@ -20,14 +20,12 @@ export default function Calculator() {
   const bmi: number = React.useMemo(() => {
     const heightInMeters: number = height / 100;
     const bmi = Math.floor(weight / (heightInMeters * heightInMeters));
-    if (bmi < 19) {
+    if (bmi <= 19) {
       setBmiResult("You are underweight 🥺 Time to bulk up!");
     } else if (bmi > 19 && bmi < 25) {
       setBmiResult("Amazing, you are the perfect weight! 🎉!");
     } else if (bmi > 25 && bmi < 30) {
-      setBmiResult(
-        "You are overweight eat some salad 🥗 "
-      );
+      setBmiResult("You are overweight eat some salad 🥗 ");
     } else {
       setBmiResult("Yo fatso, go workout! 🫠");
     }
